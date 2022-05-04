@@ -73,7 +73,7 @@ function checkValid(row, col) {
         valid = false;
         validPiecesLeft = [];
       } else {
-        // A piece was found,, so we must decide what to do with it
+        // A piece was found, so we must decide what to do with it
         if (board[checkRow][checkCol] == comparePiece) {
           // The piece we landed on is owned by the other player, so we can
           // add it to the list of pieces we might be able to take
@@ -359,7 +359,7 @@ function drawBoard() {
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(pixelWidth, pixelHeight + 50);
   initializeBoard();
 
   board[floor(cellsY / 2)][floor(cellsX / 2)] = p1;
